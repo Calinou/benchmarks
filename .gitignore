@@ -1,0 +1,14 @@
+fibo/nim/fibo
+fibo/go/fibo
+target/
+nimcache/
+
+*.class
+*.exe
+*.out
+*.gcc
+*.clang
+*.debug
+*.release
+*.o
+*.lock
