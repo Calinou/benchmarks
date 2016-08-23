@@ -21,8 +21,17 @@ mv fibo fibo.release
 cd ../cs/
 mcs Fibo.cs
 
+cd ../erl/
+erlc fibo.erl
+
+cd ../ex/
+elixirc fibo.ex
+
 cd ../go/
 go build fibo.go
+
+cd ../hs/
+ghc -O2 -optc-O3 fibo.hs -o fibo.out
 
 cd ../java/
 javac Main
@@ -40,12 +49,3 @@ mv fibo fibo.cpp.release
 cd ../rs/
 cargo build
 cargo build --release
-
-cd ../hs/
-ghc -O2 -optc-O3 fibo.hs -o fibo.out
-
-cd ../erl/
-erlc fibo.erl
-
-cd ../ex/
-elixirc fibo.ex
