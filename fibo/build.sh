@@ -34,3 +34,12 @@ mv fibo fibo.cpp.release
 cd ../rs/
 cargo build
 cargo build --release
+
+cd ../hs/
+ghc -O2 -optc-O3 fibo.hs -o fibo.out
+
+cd ../erl/
+erlc fibo.erl
+
+cd ../ex/
+elixirc fibo.ex
