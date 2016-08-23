@@ -103,6 +103,7 @@ echo -e "${COLOR_CYAN}Ruby${COLOR_RESET}"
 echo -e "${COLOR_YELLOW}System Ruby${COLOR_RESET}"
 time_sleep ruby rb/fibo.rb
 
+
 echo -e "\n"
 
 echo -e "${COLOR_CYAN}Rust${COLOR_RESET}"
@@ -110,3 +111,25 @@ echo -e "${COLOR_YELLOW}rustc (debug)${COLOR_RESET}"
 time_sleep rs/target/debug/fibo
 echo -e "${COLOR_YELLOW}rustc (release)${COLOR_RESET}"
 time_sleep rs/target/release/fibo
+
+echo -e "\n"
+
+echo -e "${COLOR_CYAN}Haskell${COLOR_RESET}"
+echo -e "${COLOR_YELLOW}system GHC${COLOR_RESET}"
+time_sleep hs/fibo.out
+
+echo -e "\n"
+
+echo -e "${COLOR_CYAN}Erlang${COLOR_RESET}"
+echo -e "${COLOR_YELLOW}system Erlang${COLOR_RESET}"
+cd erl
+time_sleep erl -noinput -run fibo
+cd ..
+
+echo -e "\n"
+
+echo -e "${COLOR_CYAN}Elixir${COLOR_RESET}"
+echo -e "${COLOR_YELLOW}system Elixir${COLOR_RESET}"
+cd ex
+time_sleep elixir -e "IO.puts Fibo.fibo 40"
+cd ..

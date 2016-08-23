@@ -13,3 +13,6 @@ nimcache/
 *.release
 *.o
 *.lock
+*.hi
+*.beam
+erl_crash.dump
