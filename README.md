@@ -34,7 +34,9 @@ time.
 |     C++ (Clang 3.8.1 -O3) | 0.48 seconds     |
 |       C (Clang 3.8.1 -O3) | 0.50 seconds     |
 |                    Go 1.7 | 0.53 seconds     |
+|    Crystal 0.18.7 (debug) | 0.54 seconds     |
 |          Mono 4.4.1 (mcs) | 0.58 seconds     |
+|  Crystal 0.18.7 (release) | 0.89 seconds     |
 |             Node.js 6.4.0 | 1.01 seconds     |
 |       Rust 0.12.0 (debug) | 1.09 seconds     |
 |              LuaJIT 2.0.4 | 1.13 seconds     |

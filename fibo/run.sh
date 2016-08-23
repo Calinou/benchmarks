@@ -27,6 +27,14 @@ time_sleep cpp/fibo.clang
 
 echo -e "\n"
 
+echo -e "${COLOR_CYAN}Crystal${COLOR_RESET}"
+echo -e "${COLOR_YELLOW}Crystal (debug)${COLOR_RESET}"
+time_sleep cr/fibo.debug
+echo -e "${COLOR_YELLOW}Crystal (release)${COLOR_RESET}"
+time_sleep cr/fibo.release
+
+echo -e "\n"
+
 echo -e "${COLOR_CYAN}C#${COLOR_RESET}"
 echo -e "${COLOR_YELLOW}Mono${COLOR_RESET}"
 time_sleep mono cs/Fibo.exe

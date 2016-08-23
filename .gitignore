@@ -1,5 +1,6 @@
 fibo/nim/fibo
 fibo/go/fibo
+fibo/cr/fibo
 target/
 nimcache/
 

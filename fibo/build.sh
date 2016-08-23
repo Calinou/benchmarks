@@ -12,6 +12,12 @@ mv a.out fibo.gcc
 clang++ -O3 fibo.cpp
 mv a.out fibo.clang
 
+cd ../cr/
+crystal build fibo.cr
+mv fibo fibo.debug
+crystal build --release fibo.cr
+mv fibo fibo.release
+
 cd ../cs/
 mcs Fibo.cs
 
